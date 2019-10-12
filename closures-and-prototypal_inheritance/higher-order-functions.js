@@ -1,4 +1,4 @@
-//###### Simple Function ######//
+// ###### Simple Function ###### //
 function letAdamLogin() {
     let array = [];
     for (let i = 0; i < 1000000; i++) {
@@ -18,7 +18,7 @@ function letEvaLogin() {
 // console.log(letEvaLogin());
 
 
-//###### Function with Params ######//
+// ###### Function with Params ###### //
 const giveAccessTo = (name) =>
     'Access Granted to ' + name;
 
@@ -40,7 +40,7 @@ function letAdminLogin(admin) {
 }
 
 
-// ##### Higher Order Functions #####//
+// ##### Higher Order Functions ##### //
 function authenticate(verify) {
     let array = [];
     for (let i = 0; i < verify; i++) {
