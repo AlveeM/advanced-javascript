@@ -8,9 +8,22 @@ Elf.prototype.attack = function() {
     return 'attack with ' + this.weapon;
 }
 
+Elf.prototype.build = function() {
+    const self = this;
+    function building() {
+        // this is assigned to the windows object
+        // return this.name + ' builds a house';
+        return self.name + ' builds a house';
+    }
+    // building();
+    // return building.bind(this);
+    return building();
+}
+
 const peter = new Elf('Peter', 'stones');
+console.log(peter.build());
 console.log(peter.name);
-console.log(peter.attack());
+console.log(peter.__proto__);
 
 const sam = new Elf('Sam', 'fire');
 console.log(sam.name);
