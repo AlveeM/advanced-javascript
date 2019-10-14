@@ -8,7 +8,7 @@ class Character {
     }
   }
 
-// my classes
+// my class
 class Queen extends Character {
     constructor(name, weapon, type) {
         super(name, weapon);
