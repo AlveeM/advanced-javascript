@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="jquery"></script>
+    <script src='/script.js'></script>
+    <script>
+        var globalSecret = '1234';
+        var fight = 'hahaha';
+    </script>
+    <script>
+        var script2 = (function($, globalSecret) {
+            $('h1').click(function(){
+                $('h1').hide();
+            })
+            $ = undefined;
+            globalSecret = 0;
+        })(jQuery, globalSecret);
+    </script>
+</body>
+</html>
